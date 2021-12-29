@@ -1,9 +1,11 @@
-import React, { ReactElement } from 'react'
+import React, { FC, ReactElement } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from 'components/Home'
+import GlobalStyles from 'components/Globalstyles'
 
-const App = (): ReactElement => (
+const App: FC = (): ReactElement => (
 	<>
+		<GlobalStyles />
 		<BrowserRouter>
 			<Routes>
 				<Route path="/">
