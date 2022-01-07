@@ -21,7 +21,6 @@
 		"noFallthroughCasesInSwitch": true,
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
-		"declaration": true,
 		"isolatedModules": true,
 		"noEmit": true,
 		"esModuleInterop": true,

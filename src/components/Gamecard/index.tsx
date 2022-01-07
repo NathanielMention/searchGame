@@ -7,7 +7,7 @@ interface Props {
 }
 
 const GameCard = ({ content }: Props): ReactElement => {
-	const { id, title, thumbnail, short_description, genre, platform } = content
+	const { id, title, thumbnail, short_description, genre } = content
 
 	const link = `/game/${id}`
 

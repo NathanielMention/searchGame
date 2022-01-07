@@ -1,5 +1,11 @@
 import React, { ReactElement } from 'react'
+import GameList from '../Gamelist'
+import withErrorBoundary from 'hoc/withErrorBoundary'
 
-const Home = (): ReactElement => <main>Home</main>
+const Home = (): ReactElement => (
+	<main>
+		<GameList />
+	</main>
+)
 
-export default Home
+export default withErrorBoundary(Home)
