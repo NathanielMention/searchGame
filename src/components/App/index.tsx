@@ -8,9 +8,7 @@ const App: FC = (): ReactElement => (
 		<GlobalStyles />
 		<BrowserRouter>
 			<Routes>
-				<Route path="/">
-					<Home />
-				</Route>
+				<Route path="/" element={<Home />}></Route>
 			</Routes>
 		</BrowserRouter>
 	</>
