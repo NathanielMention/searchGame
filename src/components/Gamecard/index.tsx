@@ -1,42 +1,14 @@
 import React, { ReactElement } from 'react'
-import { Game } from 'types'
-import windowsIcon from 'assets/icons/windows.svg'
-import browserIcon from 'assets/icons/browser.svg'
-import { BROWSER, WINDOWS } from './constants'
-import {
-	StyledLink,
-	Img,
-	Title,
-	Details,
-	Description,
-	Icon,
-	Genre,
-} from './styles'
+import { Game } from '../../types/index'
+import { StyledLink, Img, Title, Details, Description, Genre } from './styles'
 
 interface Props {
 	content: Game
 }
 
 const GameCard = ({ content }: Props): ReactElement => {
-	const { id, title, thumbnail, short_description, genre, platform } = content
-	const icons = platform.split(',').map(p => {
-		let icon = null
-		switch (p.trim()) {
-			case BROWSER:
-				icon = (
-					<Icon key={`${id}-browser`} alt="browser icon" src={browserIcon} />
-				)
-				break
-			case WINDOWS:
-				icon = (
-					<Icon key={`${id}-windows`} alt="windows icon" src={windowsIcon} />
-				)
-				break
-			default:
-				break
-		}
-		return icon
-	})
+	const { id, title, thumbnail, short_description, genre } = content
+
 	const link = `/game/${id}`
 
 	return (
@@ -46,7 +18,6 @@ const GameCard = ({ content }: Props): ReactElement => {
 				<Title>{title}</Title>
 				<Description>{short_description}</Description>
 				<Genre>{genre}</Genre>
-				{icons}
 			</Details>
 		</StyledLink>
 	)
