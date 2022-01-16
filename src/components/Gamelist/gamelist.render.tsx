@@ -11,10 +11,10 @@ interface Props {
 
 const GameList = ({ err, games, onFilterChange }: Props): ReactElement => {
 	if (err) {
-		return <p>Unable to fetch games</p>
+		return <p>Unable to fetch games please refresh</p>
 	}
 	if (!games?.length) {
-		return <p>No games available</p>
+		return <p>No games available please refresh</p>
 	}
 	return (
 		<>
