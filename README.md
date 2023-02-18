@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Introduction](#Introduction)
+- [Design](#Design)
 - [Technologies](#Technologies)
 - [Setup](#Setup)
 - [Credits](#Credits)
@@ -10,6 +11,10 @@
 ## Introduction
 
 A website that gives users the ability to filter through an array of games
+
+## Design
+
+<img width="1440" alt="Screen Shot 2023-02-17 at 8 11 20 PM" src="https://user-images.githubusercontent.com/36243638/219823586-9744a66e-c307-46b0-9a02-124bf095f708.png">
 
 ## Technologies
 
