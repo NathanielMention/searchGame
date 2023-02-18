@@ -21,7 +21,7 @@ A website that gives users the ability to filter through an array of games
 
 Clone or download the repository:
 
-`git clone https://github.com/NathanielMention/dscus.git`
+`git clone https://github.com/NathanielMention/searchGame`
 
 (Must have Node.js installed)
 
